@@ -35,3 +35,44 @@
 .purple { background: rebeccapurple; }
 
 .box {width: 100px; height: 100px;}
+
+nav {
+    display: flex;
+    color: white;
+    background: #333;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    margin: 20px;
+    font-size: 24px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 20px;
+}
+nav li:hover {
+    text-decoration: underline;
+    background: lightgray;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav .logo {
+        justify-content: center;
+
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        padding-right: 150px;
+    }
+}
