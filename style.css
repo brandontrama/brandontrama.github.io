@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+    background: lightgray;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex-item {
+    display: flex;
+    color: white;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+@media (min-width: 600px) {
+    .flex-item {
+        color: gray;
+    }
+}
+@media (min-width: 900px) {
+    .flex-item {
+        color: purple;
+    }
+    .flex-container {
+        justify-content: center;
+    }
+}
+
+/* Additional styles for fun */
+.red { background: tomato; }
+.blue { background: dodgerblue; }
+.green { background: mediumseagreen; }
+.orange { background: orange; }
+.purple { background: rebeccapurple; }
+
+.box {width: 100px; height: 100px;}
