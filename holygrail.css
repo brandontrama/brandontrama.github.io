@@ -1,4 +1,5 @@
 body {
+    font-family: "Gill Sans", sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -14,6 +15,10 @@ main article {
 }
 main nav, aside {
     background: beige;
+}
+header {
+    display: flex;
+    justify-content: center;
 }
 header, footer {
     background: yellowgreen;
