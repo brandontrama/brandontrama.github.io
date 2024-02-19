@@ -16,14 +16,20 @@
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    justify-content: center;
-    font-family: "Gill Sans", sans-serif;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
 
 }
 .photo-container div {
     display: flex;
     justify-content: flex-start;
 }
+.photo-container .underline {
+    text-decoration: none;
+  }
+.photo-container:hover .underline {
+    text-decoration: underline;
+  }
 #photoheader {
     display: flex;
     align-items: center;
@@ -42,7 +48,7 @@
     margin-right: 20px;
 }
 #seniorphoto:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.5s;
 }
 .flex-item {
@@ -80,10 +86,10 @@
 nav {
     display: flex;
     color: white;
-    background: #333;
+    background: #000;
     justify-content: space-between;
     align-items: center;
-    font-family: "Gill Sans", sans-serif;
+    font-family: Arial, sans-serif;
 
 }
 nav .logo {
