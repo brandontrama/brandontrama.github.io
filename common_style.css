@@ -90,6 +90,7 @@ html {
 
 nav {
     display: flex;
+    border-radius: 10px;
     color: white;
     background: #000;
     justify-content: space-between;
