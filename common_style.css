@@ -1,3 +1,6 @@
+html {
+    font-family: Arial, sans-serif;
+}
 .flex-container {
     display: flex;
     background: gray;
@@ -29,6 +32,8 @@
   }
 .photo-container:hover .underline {
     text-decoration: underline;
+    transform: scale(1.025);
+    transition: transform 0.5s;
   }
 #photoheader {
     display: flex;
@@ -135,4 +140,19 @@ nav a {
     .sidebar {
         flex-shrink: 1;
     }
+}
+#aboutmeheader {
+    display: flex;
+    justify-content: center;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
