@@ -5,20 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me!</title>
     <link rel="stylesheet" href="common_style.css">
+    <style>
+        #aboutmeheader {
+            margin-top: 10px;
+            background: linear-gradient(-45deg, #ffffff, #000000, #6600ff, #000000);
+            background-size: 400% 400%;
+	        animation: gradient 15s ease infinite; 
+        }
+        #aboutmeheader h1 {
+            color: white;
+            transform: scale(1.0);
+            transition: transform 0.5s;
+        }
+        #aboutmeheader h1:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s;
+        }
+        main section {
+            display: flex;
+            justify-content: flex-start;
+        }
+    </style>
+    </head>
     <body>
         <div class="container">
             <nav>
                 <div class="logo"><em>BT</em></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="https://bento.me/brandontrama">Photo Dump</a></li>
                 </ul>
             </nav>
-            <header>
-                
+            <header id="aboutmeheader">
+                <h1>A little about me...</h1>
             </header>
-            
+            <main>
+                <section>
+                    <p>
+                        I go to Siena College majoring in Computer Science. I also play the violin and like to play video games. I have a cat named Elsa, and pictures of her are in the photo dump linked at the top :)
+                    </p>
+                    <p>
+                        
+                    </p>
+                </section>
+            </main>
             <footer>
                 
             </footer>
