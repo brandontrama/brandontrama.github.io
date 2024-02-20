@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="common_style.css">
     <style>
         body {
+            display: flex;
             margin: 0;
             font-family: Arial, sans-serif;
             min-height: 100vh;
@@ -44,6 +45,35 @@
         }
         header, footer, article, nav, aside {
             padding: 1em;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            }
+        main article {
+            background: lightgray;
+            height: 20vh;
+            flex-grow: 1;
+        }
+        main nav, aside {
+            background: beige;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+        }
+        header, footer {
+            height: 10vh;
+        }
+        @media screen and (min-width: 576px) {
+            main {
+                flex-direction: row;
+            }
+            nav, aside {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 20vw;
+            }
         }
     </style>
 </head>
