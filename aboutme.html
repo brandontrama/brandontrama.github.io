@@ -14,7 +14,6 @@
 	        animation: gradient 15s ease infinite; 
         }
         #aboutmeheader h1 {
-            color: white;
             transform: scale(1.0);
             transition: transform 0.5s;
         }
@@ -43,9 +42,14 @@
 	        animation: gradient 15s ease infinite;
         }
         .games h2 {
-            color: white;
             padding-left: 95px;
             padding-right: 95px;
+            transform: scale(1.0);
+            transition: transform 0.5s;
+        }
+        .games h2:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s;
         }
         .games div {
             display: flex;
@@ -69,6 +73,14 @@
             display: flex;
             justify-content: flex-start;
         }
+        footer p {
+            color: black;
+            transition: color 0.5s;
+        }
+        footer p:hover {
+            color: white;
+            transition: color 0.5s;
+        }
     </style>
     </head>
     <body>
@@ -83,7 +95,7 @@
                 </ul>
             </nav>
             <header id="aboutmeheader">
-                <h1>A little about me...</h1>
+                <h1 style="color: white;">A little about me...</h1>
             </header>
             <main>
                 <section>
@@ -93,7 +105,7 @@
                 </section>
                 <section class="games">
                     <header>
-                        <h2>Some of my all time favorite games...</h2>
+                        <h2 style="color: white;">Some of my all time favorite games...</h2>
                     </header>
                     <div>
                         <img src="photos/games/bo2.png" alt="black ops 2"></img>
@@ -110,7 +122,7 @@
                 </section>
             </main>
             <footer>
-                
+                <p>nothing to see here</p>
             </footer>
         </div>
     </body>
