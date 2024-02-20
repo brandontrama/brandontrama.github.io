@@ -8,8 +8,9 @@
 <style>
     .photo-container {
         background: linear-gradient(-45deg, #ffffff, #000000, #ffffff, #000000);
-            background-size: 400% 400%;
-	        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+	    animation: gradient 15s ease infinite;
+        margin-top: 5px;
     }
     #photoheader {
         color: white;
@@ -17,6 +18,38 @@
     .flex-container {
         margin-top: 5px;
         border-radius: 30px;
+    }
+    .socials-container {
+        display: flex;
+        margin: 250px;
+        border-style: solid;
+        border-width: 3px;
+        margin-top: 10px;
+        justify-content: center;
+        flex-direction: column;
+        flex-grow: 100%;
+    }
+    .socials-container div {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .socials-container h3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .socials img {
+        height: 50px;
+        width: 50px;
+    }
+    .socials a img {
+        transform: scale(1.0);
+        transition: transform 0.5s;
+    }
+    .socials a img:hover {
+        transform: scale(1.25);
+        transition: transform 0.5s;
     }
 </style>
 </head>
@@ -40,12 +73,21 @@
             <h1 id="photoheader">my name is ‎<span class="underline">brandon trama</span>.</h1>
             </div>
         </section>
-        <section class="flex-container">
-            <div class="flex-item red box">1</div>
-            <div class="flex-item blue box">2</div>
-            <div class="flex-item green box">3</div>
-            <div class="flex-item orange box">4</div>
-            <div class="flex-item purple box">5</div>
+        <section class="socials-container" style="border-radius: 20px;">
+            <div>
+                <h3>Some of my socials:</h3>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/brandontrama">
+                    <img src="photos/socials/githublogo.png">
+                </a>
+                <a href="mailto:trama.brandon@gmail.com">
+                    <img src="photos/socials/gmaillogo.png" alt="gmail" style="width: 80px;"></img>
+                </a>
+                <a href="https://www.linkedin.com/in/brandon-trama-545330225">
+                    <img src="photos/socials/linkedinlogo.png" alt="linkedin"></img>
+                </a>
+            </div>
         </section>
     </main>
 
